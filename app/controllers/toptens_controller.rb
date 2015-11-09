@@ -1,0 +1,2 @@
+class TopTensController < ApplicationController
+end

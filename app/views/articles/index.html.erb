@@ -1,0 +1,19 @@
+<h3>REVIEWS</h3>
+
+<table>
+	<tr>
+		<th>Author</th>
+		<th>Date</th>
+		<th>Headline</th>
+		<th>Text</th>
+	</tr>
+
+	<% @article.each do |article| %>
+		<tr>
+			<td><%= article.author %></td>
+			<td><%= article.date %></td>
+			<td><%= article.headline %></td>
+			<td><%= article.text %></td>
+		</tr>	
+	<% end %>
+</table>
