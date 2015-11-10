@@ -1,3 +1,28 @@
 // Place all the styles related to the abouts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about {
+	text-align: center;
+	margin: 0 40px 40px 40px;
+}
+
+.ppl_text {
+	padding: 0 20px;
+}
+
+.ppl_pics {
+	border-radius:50%;
+  transition: transform 0.5s ease;
+  transform: scale(0.8);
+  margin-left: 60px;
+}
+
+img:hover {
+  transform: scale(.9);
+} 
+
+.ppl_name {
+	text-align: center;
+}
+

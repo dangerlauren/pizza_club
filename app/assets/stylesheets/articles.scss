@@ -1,3 +1,28 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.jumbotron {
+	background-image: url(http://lorempizza.com/1000/400);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 2px;
+}
+
+.rev_index_head {
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+
+.ratings {
+	
+	margin-left: 20px;
+	
+	border: 2px solid black;
+	border-radius: 2px;
+	background: #eee;
+}
+
