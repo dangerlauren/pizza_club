@@ -33,6 +33,9 @@ gem 'sprockets', '~>3.4.0'
 # Puma for sign in
 gem 'puma'
 
+# Devise for user authentication
+gem 'devise'
+
 gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
