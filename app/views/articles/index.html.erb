@@ -1,5 +1,6 @@
 <!-- this page shows all of the reviews. most recent on top, oldest at the bottom.
 will see image, then headline, date, author. -->
+<%= will_paginate %>
 
 <!-- PULL IMAGE FROM DATABASE -->
 <div class="jumbotron">
@@ -11,7 +12,7 @@ will see image, then headline, date, author. -->
 
 <!-- PULL HEADLINE, DATE, AUTHOR FROM DATABASE -->
 <div class="row">
-	<div class="col-lg-6 col-lg-offset-3 col-m-6 col-m-offset-3 col-s-6 col-s-offset-3 col-xs-6 col-xs-offset-3 rev_index_head">
+	<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3 rev_index_head">
 		<h3>MOST RECENT REVIEW</h3>
 		<div>DATE</div>
 		<div>AUTHOR</div>
@@ -20,7 +21,7 @@ will see image, then headline, date, author. -->
 
 <!-- PULL REVIEW TEXT FROM DATABASE -->
 <div class="row">
-	<div class="col-lg-8 col-lg-offset-2 col-m-8 col-m-offset-2 col-s-8 col-s-offset-2 col-xs-8 col-xs-offset-2 rev_index_text">
+	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 rev_index_text">
 		<div>
 			<p>A billion trillion vastness is bearable only through love? Extraplanetary made in the interiors of collapsing stars extraordinary claims require extraordinary evidence gathered by gravity, Apollonius of Perga the ash of stellar alchemy paroxysm of global death tingling of the spine, network of wormholes across the centuries permanence of the stars explorations shores of...</p>
 			<p>A billion trillion vastness is bearable only through love? Extraplanetary made in the interiors of collapsing stars extraordinary claims require extraordinary evidence gathered by gravity, Apollonius of Perga the ash of stellar alchemy paroxysm of global death tingling of the spine, network of wormholes across the centuries permanence of the stars explorations shores of...</p>
@@ -31,7 +32,7 @@ will see image, then headline, date, author. -->
 
 <!-- PULL RATINGS FROM DATABASE -->
 <div class="row">
-	<div class="col-lg-4 col-lg-offset-4 col-m-4 col-m-offset-4 col-s-4 col-s-offset-4 col-xs-8 col-xs-offset-2 ratings">
+	<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 ratings">
 		<div>
 			CRUST:<br>
 			SAUCE:<br>
@@ -42,7 +43,7 @@ will see image, then headline, date, author. -->
 		</div>
 	</div>
 </div>
-
+<%= will_paginate %>
 
 <!-- <table>
 	<tr>
