@@ -18,3 +18,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.devise_forms {
+	display: flex;
+	justify-content: center;
+}
+
+.devise_sign {
+	text-align: center;
+	margin-left: -55px;
+}
+
+.devise_sign_link {
+	text-align: center;
+	margin-left: -160px;
+	padding-top: 20px;
+}
+
+.devise_log_link {
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+
