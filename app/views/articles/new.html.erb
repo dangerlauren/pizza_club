@@ -1,25 +1,29 @@
-<%= form_for :article, url: articles_path do |f| %>
-	<p>
-		<%= f.label :author %><br>
-		<%= f.text_field :author %>
-	</p>
+<div class="row">
+	<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-s-10 col-s-offset-1 col-xs-10 col-xs-offset-1 rev">
+		<%= form_for :article, url: articles_path do |f| %>
+			<p>
+				<%= f.label :author %><br>
+				<%= f.text_field :author %>
+			</p>
 
-	<p>
-		<%= f.label :date %><br>
-		<%= f.date_field :date %>
-	</p>
+			<p>
+				<%= f.label :date %><br>
+				<%= f.date_field :date %>
+			</p>
 
-	<p>
-		<%= f.label :headline %><br>
-		<%= f.text_field :headline %>
-	</p>
+			<p>
+				<%= f.label :headline %><br>
+				<%= f.text_field :headline %>
+			</p>
 
-	<p>
-		<%= f.label :text %><br>
-		<%= f.text_area :text %>
-	</p>
+			<p>
+				<%= f.label :text %><br>
+				<%= f.text_area :text %>
+			</p>
 
-	<p>
-		<%= f.submit %>
-	</p>
-<% end %>
+			<p>
+				<%= f.submit %>
+			</p>
+		<% end %>
+	</div>
+</div>
