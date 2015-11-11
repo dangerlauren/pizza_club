@@ -1,0 +1,26 @@
+<div class="main">
+	<% if user_signed_in? %>
+	  <h2>Welcome back, pizza friend!</h2>
+	  <p class="lead">Post, edit, or delete reviews here.</p>
+	  <%= button_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-primary', :method => :get %> 
+	  <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-large btn-danger', :method => :get   %>
+	<% else %>
+		<h2>Welcome, new pizza friend!</h2>
+		<p class="lead">Sign in to edit this awesome pizza site.</p>
+		<div class="row-fluid">
+			<div class="span6">
+			  <%= button_to "Sign up", new_user_registration_path, :class => 'button', :method => :get   %> 
+			</div>
+			<div class="span6">
+			  <%= button_to "Login", new_user_session_path, :class => 'button', :method => :get   %>
+	  	</div>
+	  </div>
+	<% end %>
+</div>
+
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>

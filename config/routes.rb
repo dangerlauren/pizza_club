@@ -7,7 +7,13 @@ Rails.application.routes.draw do
 
   get 'abouts/index'
 
-  get 'bestof/index'
+  get 'bestof/' => 'bestof#index'
+
+  get 'abouts/' => 'abouts#index'
+
+  get 'articles/' => 'articles#index'
+
+  get 'admins/' => 'admins#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
