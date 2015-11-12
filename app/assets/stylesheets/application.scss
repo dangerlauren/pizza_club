@@ -18,6 +18,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#nav-links {
+	margin-top: -30px;
+}
+
 .devise_forms {
 	display: flex;
 	justify-content: center;
