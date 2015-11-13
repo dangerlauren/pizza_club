@@ -1,10 +1,43 @@
-<div class="main">
-	<% if user_signed_in? %>
+<% if user_signed_in? %>
+
+	<div class="main">
+		<%= button_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-primary', :method => :get %> 
+  	<%= button_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-large btn-danger' %>
 	  <h2>Welcome back, pizza friend!</h2>
 	  <p class="lead">Post, edit, or delete reviews here.</p>
-	  <%= button_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-primary', :method => :get %> 
-	  <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-large btn-danger' %>
-	<% else %>
+
+	  <div class="row-fluid">
+			<div class="span6">
+				<a href="/articles/new">POST NEW REVIEW</a>
+			</div>
+		</div>
+
+		<% @articles.each do |article| %>
+
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3 rev_index_head">
+				<h3><%= article.headline %></h3>
+				<div><%= article.date.to_s(:long) %></div>
+				<div><%= article.author %></div>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="span6">
+				<a href="/articles/<%= article.id %>/edit">EDIT</a>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="span6">
+				<a href="/articles/<%= article.id %>/destroy">DELETE</a>
+			</div>
+		</div>	
+	</div>	
+			<% end %>
+
+<% else %>
+	<div class="main">
 		<h2>Welcome, new pizza friend!</h2>
 		<p class="lead">Sign in to edit this awesome pizza site.</p>
 		<div class="row-fluid">
@@ -15,8 +48,9 @@
 			  <%= button_to "Login", new_user_session_path, :class => 'btn btn-primary', :method => :get   %>
 	  	</div>
 	  </div>
-	<% end %>
-</div>
+	</div>  
+<% end %>
+
 
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>

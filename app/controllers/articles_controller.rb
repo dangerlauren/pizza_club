@@ -2,8 +2,12 @@ class ArticlesController < ApplicationController
 	before_filter :check_access, :only => [:new, :create, :edit, :destroy]
 
 	def index
-		@article = Article.paginate(page: params[:page], :per_page => 5)
+		@articles = Article.all
 	end
+
+	# def index
+	# 	@article = Article.paginate(page: params[:page], :per_page => 5)
+	# end
 
 	def show
 		@article = Article.find(params[:id])
