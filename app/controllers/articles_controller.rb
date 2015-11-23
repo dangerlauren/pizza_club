@@ -15,13 +15,20 @@ class ArticlesController < ApplicationController
 
 
 	def new
-
+		@article = Article.new
 	end
 
 	def create
 		@article = Article.new(article_params)
 
 		@article.save
+		redirect_to @article
+	end
+
+	def update
+		@article = Article.find(params[:id])
+
+		@article.update(article_params)
 		redirect_to @article
 	end
 
@@ -32,7 +39,7 @@ class ArticlesController < ApplicationController
 	def destroy
 		Article.find(params[:id]).destroy
 		flash[:success] = "Review deleted"
-		redirect_to new_article_path
+		redirect_to admins_path
 	end
 
 	protected
