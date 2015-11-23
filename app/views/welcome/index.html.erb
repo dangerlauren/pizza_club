@@ -11,32 +11,49 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<!-- REVIEW IMAGE -->
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 rev_img">
-			<img class="img-responsive" src="http://lorempizza.com/400/300">
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"
+
+		<% @articles.each do |article| %>
+
+			<!-- REVIEW IMAGE -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_img">
+				<img class="img-responsive" src="http://lorempizza.com/400/300">
+			</div>
+			<!-- REVIEW TEXT -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_text">
+				<h3><%= article.headline %></h3>
+				<div><%= truncate article.text, length: 715, separator: ' ' %>
+					<%= link_to 'READ MORE', article_path(article) %>
+				</div>
+			</div>
+
+		<% end %>	
+
 		</div>
-		<!-- REVIEW TEXT -->
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 rev_text">
-			<h3>HEADLINE</h3>
-			<p>A billion trillion vastness is bearable only through love? Extraplanetary made in the interiors of collapsing stars extraordinary claims require extraordinary evidence gathered by gravity, Apollonius of Perga the ash of stellar alchemy paroxysm of global death tingling of the spine, network of wormholes across the centuries permanence of the stars explorations shores of...</p>
-		</div>
-		<!-- TOP TEN -->
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 top_ten">
-			<h3>THE BEST LIST</h3>
-			<ul>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-				<li>Backspace</li>
-			</ul>
-		</div>
+	
+			<!-- TOP TEN -->
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 top_ten">
+				<h3>THE BEST LIST</h3>
+				<ul>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+					<li>Backspace</li>
+				</ul>
+			</div>
+
+		
 	</div>
-</div>
+</div>		
+		
+		
+	
+	
 
 
