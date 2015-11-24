@@ -17,12 +17,12 @@
 
 			<!-- REVIEW IMAGE -->
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_img">
-				<img class="img-responsive" src="http://lorempizza.com/400/300">
+				<img class="img-responsive" src="<%= article.image_link %>" width="380" height="300">
 			</div>
 			<!-- REVIEW TEXT -->
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_text">
 				<h3><%= article.headline %></h3>
-				<div><%= truncate article.text, length: 715, separator: ' ' %>
+				<div><%= truncate article.text, length: 510, separator: ' ' %>
 					<%= link_to 'READ MORE', article_path(article) %>
 				</div>
 			</div>
