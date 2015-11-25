@@ -13,42 +13,52 @@
 	<div class="row">
 		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"
 
-		<% @articles.each do |article| %>
+			<% @articles.each do |article| %>
 
-			<!-- REVIEW IMAGE -->
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_img">
-				<img class="img-responsive" src="<%= article.image_link %>" width="380" height="300">
-			</div>
-			<!-- REVIEW TEXT -->
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_text">
-				<h3><%= article.headline %></h3>
-				<div><%= truncate article.text, length: 510, separator: ' ' %>
-					<%= link_to 'READ MORE', article_path(article) %>
+				<!-- REVIEW IMAGE -->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_img">
+					<img class="img-responsive" src="<%= article.image_link %>" width="380" height="300">
 				</div>
-			</div>
+				<!-- REVIEW TEXT -->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rev_text">
+					<h3><%= article.headline %></h3>
+					<div><%= truncate article.text, length: 510, separator: ' ' %>
+						<%= link_to 'READ MORE', article_path(article) %>
+					</div>
+				</div>
 
-		<% end %>	
+			<% end %>	
 
 		</div>
 	
-			<!-- TOP TEN -->
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 top_ten">
-				<h3>THE BEST LIST</h3>
-				<ul>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-					<li>Backspace</li>
-				</ul>
-			</div>
+		<!-- TOP TEN -->
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 top_ten">
 
-		
+			<div class="row">
+				
+				<div class="col-lg-12">
+					<h3>THE BEST LIST</h3>
+					<ul>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+						<li>Backspace</li>
+					</ul>
+				</div>
+
+				<div id="map-container" class="col-lg-12">
+					<div id="map-canvas"></div>
+				</div>
+			
+			</div>
+				
+		</div>
 	</div>
 </div>		
 		
