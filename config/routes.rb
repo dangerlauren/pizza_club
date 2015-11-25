@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
 
+  resources :pizzas
+  resources :pizzas
   devise_for :users
   resources :articles
 
   get 'welcome/index'
 
   get 'abouts/index'
+
+  get 'pizza/' => 'pizza#index'
 
   get 'bestof/' => 'bestof#index'
 

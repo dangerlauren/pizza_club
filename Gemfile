@@ -42,6 +42,10 @@ gem 'rails_12factor', group: :production
 gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
 
+# Google Maps
+gem 'geocoder'
+gem 'gmaps4rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
