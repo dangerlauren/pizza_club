@@ -39,23 +39,37 @@
 
 			<div class="row">
 				
-				<div class="col-lg-4 top_ten" style='width: 300px; height: 300px;'>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 top_ten" style='width: 300px; height: 260px;'>
 					<h3>THE BEST LIST</h3>
 					<ul>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
-						<li>Backspace</li>
+						<li><%= link_to 'Backspace', 'http://thebackspace-austin.com/' %></li>
+						<li><%= link_to 'Bufalina', 'http://www.bufalinapizza.com/' %></li>
+						<li><%= link_to 'Via 313', 'http://www.via313.com/' %></li>
+						<li><%= link_to 'Burn', 'http://burnatx.com/' %></li>
+						<li><%= link_to 'East Side Pies', 'http://eastsidepies.com/' %></li>
+						<li><%= link_to 'Little Deli', 'http://www.littledeliandpizza.com/' %></li>
+						<li><%= link_to 'House Pizzeria', 'http://www.housepizzeria.com/' %></li>
+						<li><%= link_to 'Unit-D Pizzeria', 'http://www.housepizzeria.com/' %></li>
+						<li><%= link_to 'Home Slice Pizza', 'https://www.homeslicepizza.com/' %></li>
+						<li><%= link_to 'Vespaio', 'http://austinvespaio.com/' %></li>
+						<!-- <li>Backspace</li>
+						<li>Bufalina</li>
+						<li>Via 313</li>
+						<li>Burn</li>
+						<li>East Side Pies</li>
+						<li>Little Deli</li>
+						<li>House Pizzeria</li>
+						<li>Unit-D Pizzeria</li>
+						<li>Home Slice Pizza</li>
+						<li>Vespaio</li> -->
 					</ul>
-				</div><br>
+				</div>
 
-				<div style='width: 300px;' class="col-lg-12">
+				<div id="map_text">
+					PIZZA MAP
+				</div>
+
+				<div style='width: 300px;' class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
   				<div id="map" style='width: 300px; height: 300px;'></div>
 				</div>
 
@@ -67,7 +81,7 @@
 				    handler.fitMapToBounds();
 				  });
 				</script>
-			
+
 			</div>
 				
 		</div>

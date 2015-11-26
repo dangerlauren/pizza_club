@@ -41,15 +41,23 @@ div.jumbotron {
 	text-align: center;
 	margin-left: -30px;
 	font-size: 1.2em;
-
+	margin-bottom: 20px;
 }
 
 .top_ten li {
 	list-style-type: none;
-	text-align: left;
-	margin-left: 65px;
+	text-align: center;
+	margin-left: -30px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2em;
 }
 
 #map {
 	margin-left: -45px;
+}
+
+#map_text {
+	text-align: center;
+	font-size: 1.5em;
+	margin-left: -55px;
 }
