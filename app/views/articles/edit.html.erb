@@ -6,7 +6,6 @@
 	  <%= link_to "LOGOUT", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
 	<% else %>
 
-	  <%= link_to "SIGN UP", new_user_registration_path, :class => 'navbar-link' %> 
 	  <%= link_to "LOGIN", new_user_session_path, :class => 'navbar-link' %>
 	 
 	<% end %>

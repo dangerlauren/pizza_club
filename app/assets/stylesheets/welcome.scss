@@ -52,6 +52,11 @@ div.jumbotron {
 	font-size: 1.2em;
 }
 
+li a:hover {
+	background-color: #eee;
+	color: red;
+}
+
 #map {
 	margin-left: -45px;
 }
