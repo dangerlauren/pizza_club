@@ -1,8 +1,9 @@
 <p class="navbar-text pull-right">
 	<% if user_signed_in? %>
+		<%= link_to 'EDIT MAP', pizzas_path, :class => 'navbar-link' %> |
 		<%= link_to 'EDIT ARTICLES', admins_path, :class => 'navbar-link' %> |
 	  <%= link_to 'EDIT PROFILE', edit_user_registration_path, :class => 'navbar-link' %> |
-	  <%= link_to "LOGOUT", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
+	  <%= link_to 'LOGOUT', destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
 </p>
 
 <h2 class="rev_form_head">This review has been posted.</h2>
