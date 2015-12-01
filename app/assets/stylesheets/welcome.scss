@@ -64,4 +64,10 @@ li a:hover {
 	text-align: center;
 	font-size: 1.5em;
 	margin-left: -55px;
+	& a {
+		color: black;
+	}
+	& a:hover {
+		color: red;
+	}
 }
